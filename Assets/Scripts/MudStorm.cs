@@ -24,7 +24,7 @@ public class MudStorm : MonoBehaviour
 
     IEnumerator MudSurpriseOn()
     {
-        yield return new WaitForSeconds(Random.Range(1f, 10f));
+        yield return new WaitForSeconds(Random.Range(15f, 40f));
         if (underwaterScript.IsUnderwater(playerCamera))
         {
             Debug.Log("Mud slide.");

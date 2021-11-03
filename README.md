@@ -12,6 +12,8 @@ Download and install **Unity Hub** (https://unity3d.com/get-unity/download). The
 
 After you have downloaded the project, you can start the "game" (the experience) by clicking in the play button. 
 
+**If Unity prompts you to upgrade anything related to Oculus, say _NO_**.
+
 ### 2. Starting
 
 Here for more source and more details: https://docs.unity3d.com/Manual/UsingTheEditor.html
@@ -63,7 +65,7 @@ To complete your homework, you may need to implement some UIs or simple code tha
   * `Call Tower Manager`: this is the game object that holds the `CallTowerManager` script, from which you can get key info like crewmate names, coordinates, and frequencies.
   * `HUD Flat UI`: this is the canvas with flat HUD interfaces, like the oxygen bar made in class.
   * `Goggles (UI)`: this is the game object with the objects that form the 3D HUD interfaces, like the compass.
-  * `Arm UI`: this is the canvas with the UI anchored on the player's arm.
+  * `Arm UI`: this includes both 2D and 3D UI elements.
 * Scripts:
   * `InformationManager` script functions of interest:
     * `float GetDepth()` returns the user's current depth.
