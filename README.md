@@ -42,8 +42,7 @@ Use your mouse to orient the player and the following keys for navigation:
 * d: move to the right.
 * s: move backwards.
 * SPACE: jump.
-* SHIFT: run.
-* Left click (in Game Screen): interact with a UI button.
+* Left click (in Game Screen): interact with a UI button. **Only available when not connected to Oculus Quest 2.**
 
 The keys remain the same when you go underwater, but you may have a harder time jumping due to the pressure from the water. **Special note:** when you call the emergency frequency, you're game restarts.
 
