@@ -12,6 +12,8 @@ Download and install **Unity Hub** (https://unity3d.com/get-unity/download). The
 
 After you have downloaded the project, you can start the "game" (the experience) by clicking in the play button. 
 
+**Something is not where it is in the tutorial?** We have modified the scene to be Oculus Quest 2 compatible this year, so a few GameObjects or scripts may have moved since the tutorial's creation. You can find these by using the search function in your Scene Hierarchy or by looking at Section 6 of this ReadMe file!
+
 ### 2. Set-up Unity + Warnings about updates
 
 ### **If Unity prompts you to upgrade anything related to Oculus, say _NO_**.
@@ -67,6 +69,8 @@ Additionally, there are three crewmates on boats scattered across your map: Pedr
 These crewmates will attempt to call you and their information (to call them or find their location) can be accessed via the `Call Tower Manager` (see Section 5).
 
 ### 6. Key Scripts, Game Objects, & Functions
+
+**Something is not where it is in the tutorial?** We have modified the scene to be Oculus Quest 2 compatible this year, so a few GameObjects or scripts may have moved since the tutorial's creation. You can find these by using the search function in your Scene Hierarchy or by looking at this section!
 
 To complete your homework, you may need to implement some UIs or simple code that interfaces with parts of the existing project. Below we provide a list of key scripts, game objects, and functions you may want to keep in mind:
 
