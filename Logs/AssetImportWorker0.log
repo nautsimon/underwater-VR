@@ -241,3 +241,4 @@ Received Import Request.
 Start importing Assets/Scripts/MudStorm.cs using Guid(f0750e356daebdc4aba36eafa03d890a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12ff9012595fb0ffd3bc4e7e7fe99e4') in 0.007486 seconds 
   Import took 0.029892 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

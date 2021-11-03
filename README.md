@@ -12,9 +12,18 @@ Download and install **Unity Hub** (https://unity3d.com/get-unity/download). The
 
 After you have downloaded the project, you can start the "game" (the experience) by clicking in the play button. 
 
+### 2. Set-up Unity
+
 **If Unity prompts you to upgrade anything related to Oculus, say _NO_**.
 
-### 2. Starting
+**Configure your Unity project so that it works with Oculus Quest**
+– clone the git repository of the template
+– make sure all the following points are properly configured. if not, you need to do this:
+
+1. go to **File>Build Settings** and switch the build platform to **Android**
+2. go to **Edit>Project Settings>XR Plug-in Management** and **click the Android** icon and opt-in Oculus. Similarly, **also click the desktop icon** and opt-in Oculus.
+
+### 3. Starting
 
 Here for more source and more details: https://docs.unity3d.com/Manual/UsingTheEditor.html
 
@@ -24,7 +33,7 @@ Here for more source and more details: https://docs.unity3d.com/Manual/UsingTheE
   ![play_button](tutorial-images/play_button.png)
 * If you are having difficulties starting the project, read the introduction to unity's interface below (section  6.2)
 
-### 3. Navigation & Interactions
+### 4. Navigation & Interactions
 
 Use your mouse to orient the player and the following keys for navigation:
 
@@ -38,7 +47,7 @@ Use your mouse to orient the player and the following keys for navigation:
 
 The keys remain the same when you go underwater, but you may have a harder time jumping due to the pressure from the water. **Special note:** when you call the emergency frequency, you're game restarts.
 
-### 4. Interfaces & Crewmates
+### 5. Interfaces & Crewmates
 
 Within the scene are 3 main user interface categories:
 
@@ -54,7 +63,7 @@ Additionally, there are three crewmates on boats scattered across your map: Pedr
 
 These crewmates will attempt to call you and their information (to call them or find their location) can be accessed via the `Call Tower Manager` (see Section 5).
 
-### 5. Key Scripts, Game Objects, & Functions
+### 6. Key Scripts, Game Objects, & Functions
 
 To complete your homework, you may need to implement some UIs or simple code that interfaces with parts of the existing project. Below we provide a list of key scripts, game objects, and functions you may want to keep in mind:
 
@@ -63,9 +72,8 @@ To complete your homework, you may need to implement some UIs or simple code tha
   * `Pedro`, `Romain`, `Suzie`: your crewmates! (But you shouldn't be accessing their game objects directly!)
   * `Information Manager`: this is the game object that holds the `InformationManager` script, from which you can get key info about things like oxygen or battery levels.
   * `Call Tower Manager`: this is the game object that holds the `CallTowerManager` script, from which you can get key info like crewmate names, coordinates, and frequencies.
-  * `HUD Flat UI`: this is the canvas with flat HUD interfaces, like the oxygen bar made in class.
-  * `Goggles (UI)`: this is the game object with the objects that form the 3D HUD interfaces, like the compass.
-  * `Arm UI`: this includes both 2D and 3D UI elements.
+  * `AR Goggles`: this is the game object with the objects that form the 2D, like the oxygen bar made in class, and 3D HUD interfaces, like the compass. Under `Player > OVRCameraRig > CenterEyeAnchor `.
+  * `Arm UI`: this includes both 2D and 3D UI elements. It is nested under the `ArmTracker`, which is under the `Player` GameObject.
 * Scripts:
   * `InformationManager` script functions of interest:
     * `float GetDepth()` returns the user's current depth.
@@ -78,7 +86,7 @@ To complete your homework, you may need to implement some UIs or simple code tha
     * `int GetFrequencyMax()` returns the maximum frequency for crewmate calls.
     * `int GetEmergencyFrequency()` returns the emergency frequency number, which is unique and outside of the regular frequency range.
     * `AudioClip CallCrewmate(int frequency)`  returns the appropriate audio clip based on the frequency you gave the function.
-  * `SimpleDial` script (on the `Forearm`) functions of interest:
+  * `SimpleDial` script (on the `Arm UI > Flat` GameObject) functions of interest:
     * `void QuickDial(int freq)` attempts to make a call to the given frequency if you are not currently busy with an incoming call or in a call (or forgot to hang up!).
     * `void AnswerCall()` attempts to answer an incoming call if there is currently one occurring.
     * `void HangUp()` attempts to hang up if you are currently busy (incoming call, in a call, or forgot to hang up).
@@ -87,17 +95,17 @@ To complete your homework, you may need to implement some UIs or simple code tha
   * `GameOverBattery`: game over screen when your battery runs out.
   * `GameOverOxygen`: alternative game over screen when your oxygen runs out.
 
-## 6. Homework
+## 7. Homework
 
 Check the homework instructions in the class wiki. 
 
-## 7. Learning Unity
+## 8. Learning Unity
 
-### 7.1 Unity intro sequence
+### 8.1 Unity intro sequence
 
 **We highly recommend you start by completing this tutorial**: https://learn.unity.com/project/survival-shooter-tutorial
 
-### 7.2 Unity's interface
+### 8.2 Unity's interface
 
 Here for more source and more details: https://docs.unity3d.com/Manual/UsingTheEditor.html
 
@@ -119,7 +127,7 @@ To print things to your console, you can use the following fuction `Debug.Log("T
 * You can also visit the Asset Store if you wish to add premade 3D elements, scripts etc... to your project. Please only use free assets and delete all unused ones to avoid having a large project file.
 ![asset_store](tutorial-images/asset_store.png)
 
-### 7.3 Game Objects and Scripts
+### 8.3 Game Objects and Scripts
 
 When working in Unity, you'll especially be working with things called `GameObjects` this is essentially anything that is in the scene's hierarchy.
 
@@ -139,7 +147,7 @@ As seen in the Inspector, GameObjects have components, which are usually Scripts
 
 Here, we drag and dropped the `ButtonTrigger` script to add it as a components of `key_silver`. New components usually appear at the end.
 
-### 7.4 Private vs. public variable (aka exposing variables to the "Inspector" tab)
+### 8.4 Private vs. public variable (aka exposing variables to the "Inspector" tab)
 
 You need to know there are two different types of variables in Unity: ``private`` and ``public`` variables.
 
@@ -191,6 +199,6 @@ Make sure that you assign the Ethan object to the public variable, 'original' on
 As you can see, now we could successfully read the value of the public variable from the external script.  
 By editing 'externalController', you can also manipulate 'x_axis'.
 
-### 7.5 Unity3D API and reference (always search here to see what functions are available, do, etc)
+### 8.5 Unity3D API and reference (always search here to see what functions are available, do, etc)
 
 https://docs.unity3d.com/ScriptReference/
