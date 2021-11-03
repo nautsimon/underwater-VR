@@ -23,7 +23,9 @@ After you have downloaded the project, you can start the "game" (the experience)
 – make sure all the following points are properly configured. if not, you need to do this:
 
 1. go to **File>Build Settings** and switch the build platform to **Android**
-2. go to **Edit>Project Settings>XR Plug-in Management** and **click the Android** icon and opt-in Oculus. Similarly, **also click the desktop icon** and opt-in Oculus.
+2. go to **Edit>Project Settings>XR Plug-in Management** and **click the Android** icon and opt-in Oculus. Similarly, **also click the desktop icon** and opt-in Oculus.\
+
+When you play the scene, consider enlarging the Game View, otherwise it may be hard seeing your interface on your laptop/desktop.
 
 ### 3. Starting
 
