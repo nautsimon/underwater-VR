@@ -12,9 +12,11 @@ Download and install **Unity Hub** (https://unity3d.com/get-unity/download). The
 
 After you have downloaded the project, you can start the "game" (the experience) by clicking in the play button. 
 
-### 2. Set-up Unity
+### 2. Set-up Unity + Warnings about updates
 
-#### **If Unity prompts you to upgrade anything related to Oculus, say _NO_**.
+### **If Unity prompts you to upgrade anything related to Oculus, say _NO_**.
+
+### **If Unity asks if you want to upgrade "com.unity.cinemachine", say _NO_.**
 
 **Configure your Unity project so that it works with Oculus Quest**
 – clone the git repository of the template
