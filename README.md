@@ -62,6 +62,8 @@ Within the scene are 3 main user interface categories:
 
 ![interface](tutorial-images/Project_UserInterfaces.jpg)
 
+**If you do not see this arm, do not freak out. Just check out the tutorial here: https://github.com/humancomputerintegration/UnderwaterAR/tree/main/tutorial-arm-hand**
+
 Additionally, there are three crewmates on boats scattered across your map: Pedro, Romain, and Suzie, which you can see are selected below.
 
 ![interface](tutorial-images/Project_Crewmates.JPG)
