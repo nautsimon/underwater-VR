@@ -2,7 +2,7 @@
 
 This repository includes the Unity project to complete the final project for "Intro to HCI (CMSC 20300)." 
 
-The project features a simple scuba-diving-esque scene, for which you must improve and complete the player's user interface. **All the instructions for the homework are in the class wiki.** 
+The project features a simple scuba-diving-esque scene, for which you must improve and complete the player's user interface. **All the instructions for the homework are in the class wiki.** Enjoy!
 
 ## Template code functionality
 
