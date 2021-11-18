@@ -24,8 +24,9 @@ public class CrewmateNames : MonoBehaviour
         foreach(CrewInfo currCrewmate in crewInformation)
         {
             string currName = currCrewmate.name;
+            string currNumber = currCrewmate.frequency.ToString();
             string currPosition = currCrewmate.worldLocation.ToString();
-            crewText = crewText + currName + " "  + currPosition + "\n";
+            crewText = crewText + currName + " | ☎ " + currNumber + " | "+ currPosition + "\n";
         }
 
         textBox.text = crewText;

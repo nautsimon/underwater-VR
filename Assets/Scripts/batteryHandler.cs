@@ -1,10 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Slider))]
-public class OxygenBar : MonoBehaviour
+public class BatteryBar : MonoBehaviour
 {
 
     private Slider slider;
@@ -16,10 +16,10 @@ public class OxygenBar : MonoBehaviour
         slider = GetComponent<Slider>();
         textSliderValue = GetComponent<Text>();
         ShowSliderValue();
-        SetMaxOxygenLevel(iM.GetMaxOxygenLevel());
+        SetMaxBatteryLevel(iM.GetMaxBatteryLevel());
     }
 
-    public void SetMaxOxygenLevel (float maxLevel)
+    public void SetMaxBatteryLevel (float maxLevel)
     {
         slider.maxValue = maxLevel;
         slider.value = maxLevel; // Start with max!
@@ -27,7 +27,7 @@ public class OxygenBar : MonoBehaviour
         Debug.Log("gkasdgasjhgd");
     }
 
-    public void SetOxygenLevel (float level)
+    public void SetBatteryLevel (float level)
     {
         slider.value = level;
     }
@@ -38,6 +38,6 @@ public class OxygenBar : MonoBehaviour
 
     private void Update()
     {
-        SetOxygenLevel(iM.GetOxygenLevel());
+        SetBatteryLevel(iM.GetBatteryLevel());
     }
 }

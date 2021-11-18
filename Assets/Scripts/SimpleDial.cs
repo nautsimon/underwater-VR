@@ -21,6 +21,16 @@ public class SimpleDial : MonoBehaviour
     }
 
     // Start is called before the first frame update
+    public void GetFreq(int crewNum)
+    {
+        if (!isBusy) // You need to hangup to make a call.
+        {
+            isBusy = true;
+            CrewInfo[] crewInformation = ctm.GetCrewmatesInformation();
+            Debug.Log(crewInformation[crewNum-1].frequency);
+            QuickDial(crewInformation[crewNum-1].frequency);
+        }
+    }
     public void QuickDial(int freq)
     {
         if (!isBusy) // You need to hangup to make a call.

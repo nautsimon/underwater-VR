@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class Compass : MonoBehaviour
 {
     public Transform arrow;
     public Transform northMarker;
     
+    // public Transform pedro;
+    // public Transform romain;
+    // public Transform suzie;
     public Transform target;
+
     public Transform player;
 
     private Vector3 northDirection = Vector3.zero;
@@ -34,7 +37,8 @@ public class Compass : MonoBehaviour
     }
 
     void UpdateTargetDirection()
-    {
+    {   
+        
         Vector3 direction = target.position - player.position;
 
         targetDirection = Quaternion.LookRotation(direction);
