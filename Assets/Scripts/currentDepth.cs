@@ -22,7 +22,6 @@ public class currentDepth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(player.position.y);
         tmproText.text = player.position.y.ToString("F0");
         
     }

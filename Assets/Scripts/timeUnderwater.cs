@@ -23,7 +23,6 @@ public class timeUnderwater : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(player.position.y);
         if(player.position.y < 12){
             frames = frames + 1;
             if(frames % 30 == 0){

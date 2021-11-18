@@ -23,8 +23,7 @@ public class OxygenBar : MonoBehaviour
     {
         slider.maxValue = maxLevel;
         slider.value = maxLevel; // Start with max!
-        Debug.Log(slider.value);
-        Debug.Log("gkasdgasjhgd");
+  
     }
 
     public void SetOxygenLevel (float level)
